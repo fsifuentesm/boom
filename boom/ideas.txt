@@ -1,0 +1,11 @@
+Testing and detecting the bottleneck, maybe we can get all
+the information and make a knowledge base, and then get
+a query of our own models.
+
+We can make the excercise based in functions.
+
+I think that maybe it's possible get the library information 
+and save the data in models instead of use the library 
+query, we can hive the information in a json object and 
+after do the query directly, but we can to get firts all data.
+

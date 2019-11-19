@@ -45,8 +45,8 @@ def locate_numbers(request):
                 except Exception as e:
                     print(e)
 
-    data_response = {
-        "success":True
-    }
+            data_response = {
+                "success":True
+            }
 
     return JsonResponse(data_response, safe=False)
