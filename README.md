@@ -27,3 +27,9 @@ curl -i -X POST -H "Content-Type: multipart/form-data" -F "numbers=@numbers.csv"
 ```
 
 Readme created with [stackedit.io](https://stackedit.io/app#)
+
+#### another data file
+
+To be ordered I created another branch `output/all`, this branch
+generate the data folder and save the output with a date and a
+random number.
