@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
+from datetime import datetime
+import random
 import re
 import csv
 import phonenumbers
@@ -20,7 +22,11 @@ def locate_numbers(request):
 
         lines = file_data.split("\n")
 
-        with open('output.csv', mode='w') as number_file:
+        dt = datetime.today()
+        rdm = random.randint(1, 10000)
+        name_file = str(dt.year) + str(dt.month) + str(dt.day) + str(rdm)
+
+        with open("data/output_"+ name_file +".csv", mode='w') as number_file:
             number_writer = csv.writer(number_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             number_writer.writerow(["numbers", "valid", "location"])
 
@@ -45,8 +51,6 @@ def locate_numbers(request):
                 except Exception as e:
                     print(e)
 
-            data_response = {
-                "success":True
-            }
+            data_response = {"success":True}
 
     return JsonResponse(data_response, safe=False)
