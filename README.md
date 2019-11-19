@@ -14,8 +14,7 @@ installed.
 mkdir interview
 cd interview
 git clone git@github.com:fsifuentesm/boom.git
-cd boom
-cd boom
+cd boom/boom
 sudo docker-compose up
 ```
 ## Result
