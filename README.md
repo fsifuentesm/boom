@@ -3,8 +3,8 @@
 ### Requirements
 
 It is necessary to have 
-[Docker](https://docs.docker.com/)
-[docker-compose](https://docs.docker.com/compose/install/)
+[Docker](https://docs.docker.com/), 
+[docker-compose](https://docs.docker.com/compose/install/) and
 `CURL`
 installed.
 
