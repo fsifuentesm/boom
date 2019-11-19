@@ -13,6 +13,10 @@ from django.http import JsonResponse
 @csrf_exempt 
 def locate_numbers(request):
 
+    data_response = {
+        "no_data":True
+    }
+
     if request.method == "POST":
         data = request.FILES['numbers']
 
@@ -48,5 +52,7 @@ def locate_numbers(request):
             data_response = {
                 "success":True
             }
+
+            return JsonResponse(data_response, safe=False)
 
     return JsonResponse(data_response, safe=False)
