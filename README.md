@@ -2,7 +2,11 @@
 
 ### Requirements
 
-It is necessary to have `Docker` and `CURL` installed.
+It is necessary to have 
+[Docker](https://docs.docker.com/)
+[docker-compose](https://docs.docker.com/compose/install/)
+`CURL`
+installed.
 
 ### Run
 
